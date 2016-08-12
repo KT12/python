@@ -5,6 +5,7 @@ class Fib:
     self.maximum = maximum
     # self is not a reserved word in Python
     # But, it's a bad idea to use anything else here.
+    # Self refers to the instance of the class called
     
   def __iter__(self):
     self.a = 0
