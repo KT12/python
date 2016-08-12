@@ -16,7 +16,7 @@ class Fib:
   def __next__(self):
     fib = self.a
     if fib > self.max:
-      raise StopIteration
+      raise StopIteration # Stopping conditions.
     self.a, self.b = self.b, self.a + self.b
     return fib # Need to use return, not yield.  Yield is for generators
     # Necessary anytime someone calls next(Fib)
