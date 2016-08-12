@@ -18,5 +18,5 @@ class Fib:
     if fib > self.max:
       raise StopIteration
     self.a, self.b = self.b, self.a + self.b
-    return fib
+    return fib # Need to use return, not yield.  Yield is for generators
     # Necessary anytime someone calls next(Fib)
