@@ -6,6 +6,8 @@ class Fib:
     # self is not a reserved word in Python
     # But, it's a bad idea to use anything else here.
     # Self refers to the instance of the class called
+    # Don't introduce new variables outside of __init__
+    # Need object consistency - it should never enter a state that doesn't make sense
     
   def __iter__(self):
     self.a = 0
