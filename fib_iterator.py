@@ -1,6 +1,6 @@
 class Fib:
-  ''' Iterator which will return fib values
-   Usually capitalized to differentiate from Python built-ins '''
+  ''' Iterator which will return fib values'''
+   # Usually capitalized to differentiate from Python built-ins
   def __init__(self, maximum):
     self.maximum = maximum
     # self is not a reserved word in Python
