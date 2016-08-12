@@ -11,6 +11,7 @@ class Fib:
     self.a = 0
     self.b = 1
     return self
+    # Necessary anytime someonecalls iter(Fib)
     
   def __next__(self):
     fib = self.a
@@ -18,3 +19,4 @@ class Fib:
       raise StopIteration
     self.a, self.b = self.b, self.a + self.b
     return fib
+    # Necessary anytime someone calls next(Fib)
