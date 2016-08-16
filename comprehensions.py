@@ -67,3 +67,4 @@ tags = {name[0].upper() + name[1:].lower() for name in names if len(name) > 1}
 case_freq = {'a':10, 'b': 34, 'z': 51, 'A': 7, 'C': 42, 'Z':3}
 
 total_freq = {k.lower(): case_freq.get(k.lower(),0)+case_freq.get(k.upper(),0) for k in case_freq.keys()}
+# case_freq.get(k.lower(),0) '0' is the default return value if value doesn't exist
