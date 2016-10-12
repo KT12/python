@@ -10,7 +10,7 @@ import sqlite3
 # Fetch some student records from the database.
 db = sqlite3.connect("students")
 c = db.cursor()
-query = "select name, id from students;"
+query = "SELECT name, id FROM students ORDER BY name ASC;"
 c.execute(query)
 rows = c.fetchall()
 
