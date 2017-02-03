@@ -6,3 +6,6 @@ random_dict = {'z':0, 'y':1, 'x':2, 'w':3}
 
 # This only works if the values of the dict are immutable.
 # Procedure fails for lists in the dict
+
+# Alternate Method
+reverse = dict(zip(random_dict.values(), random_dict.keys()))
